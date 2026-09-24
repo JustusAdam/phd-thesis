@@ -1,0 +1,17 @@
+name: build
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Typst (pinned)
+        run: |
+          curl -sL https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-unknown-linux-musl.tar.xz | tar xJ
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+      # Fails on leftover todo() or an abstract over 350 words / 2,450 chars.
+      - run: make final
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thesis
+          path: build/*.pdf
