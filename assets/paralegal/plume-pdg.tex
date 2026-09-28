@@ -1,0 +1,78 @@
+\begin{tikzpicture}[
+    node distance=23pt,
+    box/.style={draw, rectangle, align=center},
+    oval/.style={draw, rounded rectangle, fill=teal!50, align=center},
+    arrow/.style={-Stealth},
+    dashedbox/.style={draw, dashed, rectangle},
+    font=\ttfamily\footnotesize,
+]
+
+\newlength{\markerposx}
+\pgfmathsetlength{\markerposx}{-22pt}
+
+\newlength{\nodewithann}
+\pgfmathsetlength{\nodewithann}{12pt}
+
+\newlength{\nodedistance}
+\pgfmathsetlength{\nodedistance}{6pt}
+
+\node[box,fill=white] (selfid) {self.id @ start};
+\node[box, below=\nodewithann of selfid] (posts) {my\_data.posts @ L\ref{line:my-data}};
+\node[box,fill=white, left=25pt of posts] (db13) {db @ L\ref{line:builder-add-1}};
+
+\node[oval, above left=-3pt and \markerposx of posts.north west, anchor=south east] (userdata1) {user\_data};
+
+\node[box, fill=white, below=\nodewithann of posts] (id15start) {id @ L\ref{line:builder-add-2}$\rightarrow$start};
+\node[box, fill=white] (self15start) at (db13 |- id15start) {self @ L\ref{line:builder-add-2}$\rightarrow$start};
+\node[oval, above right=-3pt and \markerposx of id15start.north east, anchor=south west] (makequery1) {make\_delete\_query};
+\node[box, fill=white, below=\nodedistance of self15start] (self15end) {self @ L\ref{line:builder-add-2}$\rightarrow$end};
+
+
+\node[box, below=30pt of id15start] (comments) {my\_data.comments @ L\ref{line:my-data}};
+\node[box, fill=red!20, below=\nodewithann of comments] (id18start) {id @ L\ref{line:builder-add-3}$\rightarrow$start};
+\node[oval, above right=-3pt and \markerposx of id18start.north east, anchor=south west] (makequery2) {make\_delete\_query};
+
+\node[box, fill=red!20] (self18start) at (self15end |- id18start) {self @ L\ref{line:builder-add-3}$\rightarrow$start};
+
+\node[box, fill=red!20, below=\nodedistance of self18start] (self18end) {self @ L\ref{line:builder-add-3}$\rightarrow$end};
+\node[oval, above left=-3pt and \markerposx of comments.north west, anchor=south east] (userdata2) {user\_data};
+
+% % Bottom nodes
+\node[box, below=\nodewithann of self18end] (db20) {db @ L\ref{line:builder-exec-1}};
+\node[oval, above left=-3pt and -10pt of db20.north west, anchor=south east] (executes) {executes};
+
+% % Arrows
+\draw[arrow] (selfid) -- (posts);
+\draw[arrow] (db13) -- (self15start);
+\draw[arrow] (posts) -- (id15start);
+\draw[arrow] (self15start) -- (self15end);
+\draw[arrow] (id15start) -- (self15end);
+\draw[arrow] (comments) -- (id18start);
+\draw[arrow] (self15end) -- (self18start);
+\draw[arrow] (self18start) -- (self18end);
+\draw[arrow] (id18start) -- (self18end);
+\draw[arrow] (self18end) -- (db20);
+
+\coordinate (arrowmid) at ([xshift=4pt] makequery1.east);
+
+\coordinate (belowdb20) at ([yshift=-10pt] db20.south);
+
+\begin{pgfonlayer}{background}
+    \node[dashedbox, fit=(self15start)(self15end)(id15start), inner ysep=-4pt] (pd1) {};
+    \node[dashedbox, fit=(self18start)(self18end)(id18start), inner ysep=-4pt, draw=red, dashed,fill=red!20] (pd2) {};
+    \node[dashedbox, fit=(selfid)(belowdb20)(makequery1)(executes)(arrowmid), inner xsep=4pt, inner ysep=-5pt] (controller) {};
+\end{pgfonlayer}
+
+% Curved arrow from makequery1
+\draw[arrow] (selfid) to[out=south, in=west] ([yshift=-6pt]
+selfid.south east) to[out=east, in=north] (arrowmid) to[in=east, out=south]
+([yshift=-6pt] pd1.south east) to[out=west, in=90] (comments);
+
+\node[below right=0pt and 0pt of pd1.south east, anchor=south east] {prepare\_delete @ L\ref{line:builder-add-2}};
+\node[below right=0pt and 0pt of pd2.south east, anchor=south east] {prepare\_delete @ L\ref{line:builder-add-3}};
+\node[below right=0pt and 0pt of controller.south east, anchor=south east] {delete\_user @ L\ref{line:builder-exec-1}};
+
+% Dotted line from top
+\draw[dotted] (selfid.north) -- ++(0,10pt);
+
+\end{tikzpicture}

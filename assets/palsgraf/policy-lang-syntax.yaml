@@ -1,0 +1,70 @@
+%YAML 1.2
+---
+name: Policy Language
+file_extensions: [policy]
+scope: source.policy
+
+contexts:
+  main:
+    - include: implication
+    - include: statement
+    - include: effect_call
+    - include: permission_pair
+
+  implication:
+    - match: '([a-zA-Z_][a-zA-Z0-9_-]*)(\()([^)]*)(\))\s*\n?\s*(->)\s*([a-zA-Z_][a-zA-Z0-9_-]*)(\()'
+      captures:
+        1: keyword.control.condition.policy
+        2: punctuation.section.parens.begin.policy
+        3: variable.parameter.policy
+        4: punctuation.section.parens.end.policy
+        5: keyword.operator.arrow.policy
+        6: keyword.control.effect.policy
+        7: punctuation.section.parens.begin.policy
+      push: permission_args
+    - match: '([a-zA-Z_][a-zA-Z0-9_-]*)(\()([^)]*)(\))\s*\n?\s*(->)\s*'
+      captures:
+        1: keyword.control.condition.policy
+        2: punctuation.section.parens.begin.policy
+        3: variable.parameter.policy
+        4: punctuation.section.parens.end.policy
+        5: keyword.operator.arrow.policy
+
+  statement:
+    - match: '(deny|allow)(\()'
+      captures:
+        1: keyword.control.policy
+        2: punctuation.section.parens.begin.policy
+      push: permission_args
+
+  permission_args:
+    - match: '\)'
+      scope: punctuation.section.parens.end.policy
+      pop: true
+    - include: effect_call
+    - include: permission_pair
+    - match: '\ball\b'
+      scope: constant.language.wildcard.policy
+    - match: '\bin\b'
+      scope: keyword.operator.in.policy
+    - include: quoted_scope
+    - match: '[a-zA-Z_][a-zA-Z0-9_-]*'
+      scope: entity.name.scope.policy
+
+  effect_call:
+    - match: '(effect)(\()'
+      captures:
+        1: support.function.effect.policy
+        2: punctuation.section.parens.begin.policy
+      push: permission_args
+
+  permission_pair:
+    - match: '([a-zA-Z_][a-zA-Z0-9_-]*)(:)([a-zA-Z_][a-zA-Z0-9_-]*)'
+      captures:
+        1: support.class.namespace.policy
+        2: punctuation.separator.policy
+        3: support.function.action.policy
+
+  quoted_scope:
+    - match: '"[^"]*"'
+      scope: string.quoted.double.policy
