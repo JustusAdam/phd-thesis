@@ -1,6 +1,930 @@
-pierce2002types:
-  type: book
-  title: Types and Programming Languages
-  author: Pierce, Benjamin C.
-  date: 2002
-  publisher: MIT Press
+alignment-not-safe:
+  type: article
+  title: 'Mission Impossible: A Statistical Perspective on Jailbreaking LLMs'
+  author:
+  - Su, Jingtong
+  - Kempe, Julia
+  - Ullrich, Karen
+  date: 2024
+  editor:
+  - Globerson, A.
+  - Mackey, L.
+  - Belgrave, D.
+  - Fan, A.
+  - Paquet, U.
+  - Tomczak, J.
+  - Zhang, C.
+  page-range: 38267-38306
+  url: https://proceedings.neurips.cc/paper_files/paper/2024/file/439bf902de1807088d8b731ca20b0777-Paper-Conference.pdf
+  parent:
+    type: proceedings
+    title: Advances in Neural Information Processing Systems
+    publisher: Curran Associates, Inc.
+    volume: 37
+camel:
+  type: article
+  title: Defeating Prompt Injections by Design
+  author:
+  - Debenedetti, Edoardo
+  - Shumailov, Ilia
+  - Fan, Tianqi
+  - Hayes, Jamie
+  - Carlini, Nicholas
+  - Fabian, Daniel
+  - Kern, Christoph
+  - Shi, Chongyang
+  - Terzis, Andreas
+  - Tramèr, Florian
+  date: 2025
+  url: https://arxiv.org/abs/2503.18813
+  serial-number:
+    arxiv: '2503.18813'
+  parent:
+    type: periodical
+fides:
+  type: article
+  title: Securing AI Agents with Information-Flow Control
+  author:
+  - Costa, Manuel
+  - Köpf, Boris
+  - Kolluri, Aashish
+  - Paverd, Andrew
+  - Russinovich, Mark
+  - Salem, Ahmed
+  - Tople, Shruti
+  - Wutschitz, Lukas
+  - Zanella-Béguelin, Santiago
+  date: 2025
+  url: https://arxiv.org/abs/2505.23643
+  serial-number:
+    arxiv: '2505.23643'
+  parent:
+    type: periodical
+conseca:
+  type: article
+  title: 'Contextual Agent Security: A Policy for Every Purpose'
+  author:
+  - Tsai, Lillian
+  - Bagdasarian, Eugene
+  date: 2025-05
+  page-range: 8-17
+  url: http://dx.doi.org/10.1145/3713082.3730378
+  serial-number:
+    doi: 10.1145/3713082.3730378
+  parent:
+    type: proceedings
+#    title: Proceedings of the Workshop on Hot Topics in Operating Systems
+    title: Proc. HotOS
+    publisher: ACM
+    parent:
+      type: proceedings
+      title: HOTOS ’25
+agentgpt:
+  type: web
+  title: 'AgentGPT: Assemble, configure, and deploy autonomous AI Agents in your browser.'
+  url: https://github.com/reworkd/AgentGPT
+microsoft-virtual-agent:
+  type: web
+  title: Microsoft Copilot Studio
+  url: https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio/
+mcp-server-registry:
+  type: web
+  title: Official MCP Registry
+  url: 
+    value: https://registry.modelcontextprotocol.io/docs
+    date: '2025-10-25'
+mcp:
+  type: web
+  title: 'Model Context Protocol: an open-source standard for connecting AI applications to external systems.'
+  url: 
+    value: https://modelcontextprotocol.io/
+    date: '2025-10-25'
+owasp-prompt-injection:
+  type: web
+  title: 'OWASP Top 10: LLM01:2025 Prompt Injection'
+  url: 
+    value: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+    date: '2025-10-25'
+owasp-sensitive-information-disclosure:
+  type: web
+  title: 'OWASP Top 10: LLM02:2025 Sensitive Information Disclosure'
+  url: 
+    value: https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
+    date: '2025-10-25'
+owasp-top-10-2025:
+  type: web
+  title: 2025 Top 10 Risk & Mitigations for LLMs and Gen AI Apps
+  url: 
+    value: https://genai.owasp.org/llm-top-10/
+    date: '2025-10-25'
+vertexstudio-developer-write-file:
+  type: web
+  title: Writing file tool in the VertexStudio/developer MCP server
+  url: 
+    value: https://github.com/VertexStudio/developer/blob/86b7ebf60428dbf6c9bdf75c92631ce3a7040049/src/developer/mod.rs#L250
+    date: '2025-10-30'
+10.1145/2666356.2594299:
+  type: article
+  title: 'FlowDroid: precise context, flow, field, object-sensitive and lifecycle-aware taint analysis for Android apps'
+  author:
+  - Arzt, Steven
+  - Rasthofer, Siegfried
+  - Fritz, Christian
+  - Bodden, Eric
+  - Bartel, Alexandre
+  - Klein, Jacques
+  - Le Traon, Yves
+  - Octeau, Damien
+  - McDaniel, Patrick
+  date: 2014-06
+  page-range: 259-269
+  url: https://doi.org/10.1145/2666356.2594299
+  serial-number:
+    doi: 10.1145/2666356.2594299
+    issn: 0362-1340
+  parent:
+    type: periodical
+    title: SIGPLAN Not.
+    publisher:
+      name: Association for Computing Machinery
+      location: New York, NY, USA
+    issue: 6
+    volume: 49
+flow-droid:
+  type: article
+  title: 'FlowDroid: precise context, flow, field, object-sensitive and lifecycle-aware taint analysis for Android apps'
+  author:
+  - Arzt, Steven
+  - Rasthofer, Siegfried
+  - Fritz, Christian
+  - Bodden, Eric
+  - Bartel, Alexandre
+  - Klein, Jacques
+  - Le Traon, Yves
+  - Octeau, Damien
+  - McDaniel, Patrick
+  date: 2014
+  page-range: 259-269
+  url: https://doi.org/10.1145/2594291.2594299
+  serial-number:
+    doi: 10.1145/2594291.2594299
+    isbn: '9781450327848'
+  parent:
+    type: proceedings
+    title: Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation
+    publisher:
+      name: Association for Computing Machinery
+      location: Edinburgh, United Kingdom
+    short: PLDI '14
+droidsafe:
+  type: article
+  title: Information Flow Analysis of Android Applications in DroidSafe.
+  author:
+  - Gordon, Michael I
+  - Kim, Deokhwan
+  - Gilham, Limei
+  - Nguyen, Nguyen
+  date: 2015
+  parent:
+    type: proceedings
+    title: Network and Distributed Systems Symposium
+    short: NDSS '15
+resin:
+  type: article
+  title: Improving Application Security with Data Flow Assertions
+  author:
+  - Yip, Alexander
+  - Wang, Xi
+  - Zeldovich, Nickolai
+  - Kaashoek, M. Frans
+  date: 2009-10
+  page-range: 291-304
+  url: https://doi.org/10.1145/1629575.1629604
+  serial-number:
+    doi: 10.1145/1629575.1629604
+    isbn: '9781605587523'
+  parent:
+    type: proceedings
+    title: Proceedings of the ACM SIGOPS 22nd Symposium on Operating Systems Principles
+    publisher:
+      name: null
+      location: Big Sky, Montana, USA
+jacqueline:
+  type: article
+  title: Precise, dynamic information flow for database-backed applications
+  author:
+  - Yang, Jean
+  - Hance, Travis
+  - Austin, Thomas H.
+  - Solar-Lezama, Armando
+  - Flanagan, Cormac
+  - Chong, Stephen
+  date: 2016-06
+  page-range: 631-647
+  url: https://doi.org/10.1145/2908080.2908098
+  serial-number:
+    doi: 10.1145/2908080.2908098
+    isbn: '9781450342612'
+  parent:
+    type: proceedings
+    title: Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation
+    publisher:
+      name: null
+      location: Santa Barbara, California, USA
+claude-sandbox:
+  type: article
+  title: Claude Code Sandboxing
+  author:
+  - Dworken, David
+  - Weller-Davies, Oliver
+  - Choi, Meaghan
+  - Wu, Catherine
+  - Vorwerck, Molly
+  - Isken, Alex
+  - Bradwell, Kier
+  - Garcia, Kevin
+  url: https://www.anthropic.com/engineering/claude-code-sandboxing
+  parent:
+    type: periodical
+privguard:
+  type: article
+  title:
+    value: 'PrivGuard: Privacy Regulation Compliance Made Easier'
+    short: 'PrivGuard'
+  author:
+  - Wang, Lun
+  - Khan, Usmann
+  - Near, Joseph
+  - Pang, Qi
+  - Subramanian, Jithendaraa
+  - Somani, Neel
+  - Gao, Peng
+  - Low, Andrew
+  - Song, Dawn
+  date: 2022-08
+  page-range: 3753-3770
+  url:
+    value: https://www.usenix.org/conference/usenixsecurity22/presentation/wang-lun
+    date: 2022-12-29
+  serial-number:
+    isbn: 978-1-939133-31-1
+  parent:
+    type: proceedings
+    title: Proceedings of the 31st {USENIX Security Symposium}
+    publisher:
+      name: null
+      location: Boston, Massachusetts, USA
+sesame:
+  type: article
+  title: 'Sesame: Practical End-to-End Privacy Compliance with Policy Containers and Privacy Regions'
+  author:
+  - Dak Albab, Kinan
+  - Agvanian, Artem
+  - Aby, Allen
+  - Tiffany, Corinn
+  - Portland, Alexander
+  - Ridley, Sarah
+  - Schwarzkopf, Malte
+  date: 2024
+  page-range: 709-725
+  url: https://doi.org/10.1145/3694715.3695984
+  serial-number:
+    doi: 10.1145/3694715.3695984
+    isbn: '9798400712517'
+  parent:
+    type: proceedings
+    title: Proceedings of the ACM SIGOPS 30th Symposium on Operating Systems Principles
+    publisher:
+      name: Association for Computing Machinery
+      location: Austin, TX, USA
+    short: SOSP '24
+riverbed:
+  type: article
+  title: 'Riverbed: Enforcing User-defined Privacy Constraints in Distributed Web Services'
+  author:
+  - Wang, Frank
+  - Ko, Ronny
+  - Mickens, James
+  date: 2019-02
+  page-range: 615-630
+  url: https://www.usenix.org/conference/nsdi19/presentation/wang-frank
+  serial-number:
+    isbn: 978-1-931971-49-2
+  parent:
+    type: proceedings
+    title: 16th USENIX Symposium on Networked Systems Design and Implementation 
+    publisher:
+      name: USENIX Association
+      location: Boston, MA
+tool-description-instructions:
+  type: web
+  title: Shopify Dev MCP Server (copy, as original has been removed)
+  url: https://github.com/DanielNordahl/dev-shopify-mcp/blob/9586ffbcfa9a60f38eaa2167c0483673719e01ec/src/tools/learn_shopify_api/index.ts#L67
+paralegal:
+  type: article
+  title: 'Paralegal: Practical static analysis for privacy bugs'
+  author:
+  - Adam, Justus
+  - Zech, Carolyn
+  - Zhu, Livia
+  - Rajesh, Sreshtaa
+  - Harbison, Nathan
+  - Jethwa, Mithi
+  - Crichton, Will
+  - Krishnamurthi, Shriram
+  - Schwarzkopf, Malte
+  date: 2025
+  page-range: 957-978
+  parent:
+    type: proceedings
+    title: 19th USENIX Symposium on Operating Systems Design and Implementation 
+hlio:
+  type: article
+  title:
+    value: 'HLIO: Mixing Static and Dynamic Typing for Information-Flow Control in Haskell'
+    short: 'HLIO'
+  author:
+  - Buiras, Pablo
+  - Vytiniotis, Dimitrios
+  - Russo, Alejandro
+  date: 2015-08
+  page-range: 289-301
+  url:
+    value: https://doi.org/10.1145/2784731.2784758
+    date: 2023-01-02
+  serial-number:
+    doi: 10.1145/2784731.2784758
+    isbn: 978-1-4503-3669-7
+  parent:
+    type: proceedings
+    title: Proceedings of the 20th {ACM SIGPLAN International Conference} on {Functional Programming}
+    publisher:
+      name: null
+      location: Vancouver, British Columbia, Canada
+jflow:
+  type: article
+  title:
+    value: 'JFlow: Practical Mostly-Static Information Flow Control'
+    short: 'JFlow'
+  author: Myers, Andrew C.
+  date: 1999-01
+  page-range: 228-241
+  url:
+    value: https://doi.org/10.1145/292540.292561
+    date: 2023-02-02
+  serial-number:
+    doi: 10.1145/292540.292561
+    isbn: 978-1-58113-095-9
+  parent:
+    type: proceedings
+    title: 'Proceedings of the 26th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages'
+    short: POPL
+    publisher:
+      name: null
+      location: San Antonio, Texas, USA
+rulekeeper:
+  type: article
+  title:
+    value: '{RuleKeeper}: {GDPR-Aware Personal Data Compliance} for {Web Frameworks}'
+    short: '{RuleKeeper}'
+  author:
+  - Ferreira, Mafalda
+  - Brito, Tiago
+  - Santos, José Fragoso
+  - Santos, Nuno
+  date: 2022-12
+  page-range: 1014-1031
+  url:
+    value: https://www.computer.org/csdl/proceedings-article/sp/2023/933600b014/1Js0DzhaXNm
+    date: 2023-01-05
+  serial-number:
+    doi: 10.1109/SP46215.2023.00058
+    isbn: 978-1-66549-336-9
+  parent:
+    type: proceedings
+    title: Proceedings of the 2023 IEEE Symposium on Security and Privacy
+    short: SP
+    publisher:
+      name: null
+      location: San Francisco, California, USA
+rlbox:
+  type: article
+  title: Retrofitting Fine Grain Isolation in the Firefox Renderer
+  author:
+  - Narayan, Shravan
+  - Disselkoen, Craig
+  - Garfinkel, Tal
+  - Froyd, Nathan
+  - Rahm, Eric
+  - Lerner, Sorin
+  - Shacham, Hovav
+  - Stefan, Deian
+  date: 2020-08
+  page-range: 699-716
+  url: https://www.usenix.org/conference/usenixsecurity20/presentation/narayan
+  serial-number:
+    isbn: 978-1-939133-17-5
+  parent:
+    type: proceedings
+    title: 29th USENIX Security Symposium
+    publisher: USENIX Association
+nacl:
+  type: article
+  title: 'Native client: A sandbox for portable, untrusted x86 native code'
+  author:
+  - Yee, Bennet
+  - Sehr, David
+  - Dardyk, Gregory
+  - Chen, J Bradley
+  - Muth, Robert
+  - Ormandy, Tavis
+  - Okasaka, Shiki
+  - Narula, Neha
+  - Fullagar, Nicholas
+  date: 2010
+  page-range: 91-99
+  parent:
+    type: periodical
+    title: Communications of the ACM
+    publisher: ACM New York, NY, USA
+    issue: 1
+    volume: 53
+ryoan:
+  type: article
+  title: 'Ryoan: A Distributed Sandbox for Untrusted Computation on Secret Data'
+  author:
+  - Hunt, Tyler
+  - Zhu, Zhiting
+  - Xu, Yuanzhong
+  - Peter, Simon
+  - Witchel, Emmett
+  date: 2018-12
+  url: https://doi.org/10.1145/3231594
+  serial-number:
+    doi: 10.1145/3231594
+    issn: 0734-2071
+  parent:
+    type: periodical
+    title: ACM Trans. Comput. Syst.
+    publisher:
+      name: Association for Computing Machinery
+      location: New York, NY, USA
+    issue: 4
+    volume: 35
+wcgw:
+  type: web
+  title: 'wcgw: Shell and coding agent on claude desktop app'
+  url: 
+    value: https://github.com/rusiaaman/wcgw/blob/4b857040cf74a937ff41f6b6d26205664a3f578c/README.md?plain=1#L7
+    date: 2026-02-24
+computer-use-agent:
+  type: web
+  title: 'open-computer-use: AI computer use powered by open source LLMs and E2B Desktop Sandbox'
+  url: 
+    value: https://github.com/e2b-dev/open-computer-use
+    date: '2025-11-16'
+try:
+  type: article
+  title: "Controlling Opaque-Component Effects with Semisolates and Try"
+  author:
+  - Lamprou, Evangelos
+  - Zhu, Tianyu (Ezri)
+  - Jin, Di
+  - Ntousakis, Grigoris
+  - Liargkovas, Georgios
+  - Eng, Calvin
+  - Kallas, Konstantinos
+  - Greenberg, Michael
+  - Vasilakis, Nikos
+  date: 2026
+  parent:
+    title: 20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)
+    publisher:
+      name: USENIX Association
+
+overlayfs:
+  type: web
+  title: 'Overlay Filesystem Documentation'
+  author:
+  - Brown, Neil
+  - others
+  date: 2026
+  url: 
+    value: https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
+    date: '2026-02-18'
+cursor:
+  type: web
+  title: 'Cursor: The best way to code with AI'
+  url: 
+    value: https://cursor.com/
+    date: 2026-02-21
+claudecode:
+  type: web
+  title: 'Claude Code by Anthropic | AI Coding Agent, Terminal, IDE'
+  url:
+    value: https://claude.com/product/claude-code
+    date: 2026-02-21
+menti:
+  type: article
+  title: 'MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling'
+  author:
+  - Zhu, Yakun
+  - Wei, Shaohang
+  - Wang, Xu
+  - Xue, Kui
+  - Zhang, Shaoting
+  - Zhang, Xiaofan
+  date: 2025
+  eprint: "2410.13610"
+  url: https://arxiv.org/abs/2410.13610
+  archive: "arXiv"
+  primary-class: "cs.AI"
+
+agenticaisurveyhealthcare:
+  type: article
+  title: "A Comprehensive Survey of Agentic AI in Healthcare"
+  author: 
+    - Xu, Gelei
+    - Li, Xueyang
+    - Chen, Yixiong
+    - Duan, Yuying
+    - Wu, Shuqing
+    - Yu, Alexander
+    - Chiu, Ching-Hao
+    - Ni, Juntong
+    - Tang, Ningzhi
+    - Li, Toby Jia-Jun
+    - Yuille, Alan
+    - Jin, Wei
+    - Shi, Yiyu
+  date: 2025
+  url: https://doi.org/10.36227/techrxiv.176240542.22279040/v1
+  serial-number:
+    doi: 10.36227/techrxiv.176240542.22279040
+    
+githubmcp:
+  type: web
+  title: "GitHub MCP Server"
+  url: 
+    value: https://github.com/github/github-mcp-server
+    date: 2026-02-23
+
+dbmcp:
+  type: web
+  title: "MCP Database Server"
+  url: 
+    value: https://github.com/executeautomation/mcp-database-server
+    date: 2026-02-23
+
+openbbmcp:
+  type: web
+  title: "OpenBB MCP Server"
+  url: 
+    value: https://github.com/OpenBB-finance/OpenBB/tree/develop/openbb_platform/extensions/mcp_server
+    date: 2026-02-23
+
+stripemcp:
+  type: web
+  title: "Stripe AI"
+  url: 
+    value: https://github.com/stripe/ai?tab=readme-ov-file#model-context-protocol-mcp
+    date: 2026-02-23
+    
+mcptoolbench:
+  type: web
+  title: "MCPToolBench++: AI Agent MCP Model Context Protocol MCP Tool Use Benchmark"
+  url: 
+    value: https://github.com/mcp-tool-bench/MCPToolBenchPP
+    date: 2026-02-23
+
+anthropicsandbox:
+  type: web
+  title: "Beyond permission prompts: making Claude Code more secure and autonomous"
+  url: 
+    value: https://www.anthropic.com/engineering/claude-code-sandboxing
+    date: 2025-10-20
+
+polp:
+  type: article
+  title: "The protection of information in computer systems"
+  author:
+  - Saltzer, Jerome H
+  - Schroeder, Michael D
+  url: https://doi.org/10.1109/PROC.1975.9939
+  page-range: 1278--1308
+  date: 1975-09
+  parent:
+    type: proceedings
+    title: Proceedings of the IEEE
+    publisher: IEEE
+    volume: 63
+  serial-number:
+    doi: 10.1109/PROC.1975.9939
+    
+codemodecloudflare:
+  type: web
+  title: 'Code Mode: the better way to use MCP'
+  author:
+    - Varda, Kenton
+    - Pai, Sunil
+  url: 
+    value: https://blog.cloudflare.com/code-mode/
+    date: 2025
+
+codemodeanthropic:
+  type: web
+  title: 'Code execution with MCP: Building more efficient agents'
+  author:
+    - "Engineering at Anthropic"
+  url: 
+    value: https://www.anthropic.com/engineering/code-execution-with-mcp
+    date: 2025
+
+autogpt:
+  type: web
+  title: "[Long read] Deep dive into AutoGPT: A comprehensive and in-depth step-by-step guide to how it works"
+  author:
+    - "Harish Mohan Raj"
+  url:
+    value: https://dev.to/airtai/long-read-deep-dive-into-autogpt-a-comprehensive-and-in-depth-step-by-step-guide-to-how-it-works-48gd
+    date: 2023
+    
+meta-email-nuke:
+  type: web
+  url:
+    value: https://x.com/ns123abc/status/2025975943529931240
+    date: 2026-02-23
+  title: 'NIK in X: 🚨 META’s head of AI safety and alignment gets her emails nuked by OpenClaw​​​​​​​​​​​​​​​​'
+progent:
+  type: article
+  title: 'Progent: Programmable Privilege Control for LLM Agents'
+  author:
+  - Shi, Tianneng
+  - He, Jingxuan
+  - Wang, Zhun
+  - Li, Hongwei
+  - Wu, Linyu
+  - Guo, Wenbo
+  - Song, Dawn
+  date: 2025
+  url: https://arxiv.org/abs/2504.11703
+  serial-number:
+    arxiv: '2504.11703'
+llm-coercion:
+  type: article
+  title: Adversarial Search Engine Optimization for Large Language Models
+  author:
+  - Nestaas, Fredrik
+  - Debenedetti, Edoardo
+  - Tramèr, Florian
+  date: 2024
+  url: https://arxiv.org/abs/2406.18382
+  serial-number:
+    arxiv: '2406.18382'
+universal-jailbreak:
+  type: article
+  title: Universal and Transferable Adversarial Attacks on Aligned Language Models
+  author:
+  - Zou, Andy
+  - Wang, Zifan
+  - Carlini, Nicholas
+  - Nasr, Milad
+  - Kolter, J. Zico
+  - Fredrikson, Matt
+  date: 2023
+  url: https://arxiv.org/abs/2307.15043
+  serial-number:
+    arxiv: '2307.15043'
+adaptive-jailbreak:
+  type: article
+  title: On Adaptive Attacks to Adversarial Example Defenses
+  author:
+  - Tramer, Florian
+  - Carlini, Nicholas
+  - Brendel, Wieland
+  - Madry, Aleksander
+  date: 2020
+  url: https://arxiv.org/abs/2002.08347
+  serial-number:
+    arxiv: '2002.08347'
+mir-check:
+  type: article
+  title: 'MirChecker: Detecting Bugs in Rust Programs via Static Analysis'
+  author:
+  - Li, Zhuohua
+  - Wang, Jincheng
+  - Sun, Mingshen
+  - Lui, John C.S.
+  date: 2021
+  page-range: 2183-2196
+  url: https://doi.org/10.1145/3460120.3484541
+  serial-number:
+    doi: 10.1145/3460120.3484541
+    isbn: '9781450384544'
+  parent:
+    type: proceedings
+    title: Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security
+    publisher:
+      name: Association for Computing Machinery
+      location: Virtual Event, Republic of Korea
+    parent:
+      type: proceedings
+      title: CCS '21
+bin-wrap:
+  type: article
+  title: 'BinWrap: Hybrid Protection against Native Node.js Add-ons'
+  author:
+  - Christou, George
+  - Ntousakis, Grigoris
+  - Lahtinen, Eric
+  - Ioannidis, Sotiris
+  - Kemerlis, Vasileios P.
+  - Vasilakis, Nikos
+  date: 2023
+  page-range: 429-442
+  url: https://doi.org/10.1145/3579856.3590330
+  serial-number:
+    doi: 10.1145/3579856.3590330
+    isbn: '9798400700989'
+  parent:
+    type: proceedings
+    title: Proceedings of the 2023 ACM Asia Conference on Computer and Communications Security
+    publisher:
+      name: Association for Computing Machinery
+      location: Melbourne, VIC, Australia
+    parent:
+      type: proceedings
+      title: ASIA CCS '23
+openclaw-config-exploit:
+  type: web
+  title: '[Security] Nostr Channel: Unauthenticated Config Modification Leading to System Takeover'
+  url: 
+    value: https://github.com/openclaw/openclaw/issues/12534
+    date: 2026-02-25
+openclaw-data-exfiltration:
+  type: web
+  title: 'Security: capability-evolver skill exfiltrates data to Feishu'
+  url:
+    value: https://github.com/openclaw/openclaw/issues/11879
+    date: 2026-02-25
+openclaw-apikey-leakage:
+  type: web
+  title: 'Feature Request: Masked Secrets - Prevent Agent from Accessing Raw API Keys'
+  url:
+    value: 'https://github.com/openclaw/openclaw/issues/10659'
+    date: 2026-02-25
+openclaw-log-exposure:
+  type: web
+  title: '[Security] Diagnostics-OTEL: Sensitive Data Leakage via Unredacted Export'
+  url:
+    value: 'https://github.com/openclaw/openclaw/issues/12542'
+    date: 2026-02-25
+agent-destroyed-production:
+  type: web
+  title: "JER on X: \"An AI Agent Just Destroyed Our Production Data. It Confessed in Writing.\" / X"
+  url:
+    value: "https://x.com/lifeof_jer/status/2048103471019434248"
+    date: 2026-04-27
+isolategpt:
+  type: article
+  title: "IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems"
+  author:
+    - "Wu, Yuhao"
+    - "Roesner, Franziska"
+    - "Kohno, Tadayoshi"
+    - "Zhang, Ning"
+    - "Iqbal, Umar"
+  date: 2024-03-08
+  serial-number:
+    arxiv: 2403.04960
+  url:
+    value: "https://arxiv.org/abs/2403.04960"
+    date: 2026-05-28
+openclaw:
+  type: web
+  title: 'OpenClaw -- Personal AI Assistant'
+  url:
+    value: 'https://openclaw.ai'
+    date: 2026-03-19
+
+openclaw-credential-exploit:
+  type: misc
+  title: CVE-2026-27487
+  url:
+    value: "https://nvd.nist.gov/vuln/detail/CVE-2026-27487"
+    date: 2026-03-19
+  publisher: NIST
+openclaw-install-malware:
+  type: web
+  title: "🚨 CRITICAL: Active Supply Chain Attack on ClawHub #123"
+  url:
+    value: "https://github.com/openclaw/clawhub/issues/123"
+    date: 2026-03-19
+openclaw-auto-install-skill:
+  type: web
+  title: "Skill Finder (Find ClawHub skills + Search Skills.sh)"
+  url: 
+    value: "https://clawhub.ai/ivangdavila/skill-finder"
+    date: 2026-03-19
+1mcpapp1mcpappagent:
+  type: repository
+  title: "1mcp-app/agent: A unified Model Context Protocol server implementation that aggregates multiple MCP servers into one."
+  author: 1mcp-app
+  url:
+    value: "https://github.com/1mcp-app/agent"
+    date: 2026-03-19
+profullstackprofullstackmcpserve:
+  type: repository
+  title: "profullstack/mcp-server: A generic, modular server for implementing the Model Context Protocol (MCP)."
+  author: profullstack
+  url:
+    value: "https://github.com/profullstack/mcp-server"
+    date: 2026-03-19
+cve202627487:
+  type: misc
+  title: "CVE-2026-27487 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+  url:
+    value: "https://nvd.nist.gov/vuln/detail/CVE-2026-27487"
+    date: 2026-03-20
+ironclaw:
+  type: web
+  title: "IronClaw: Unleash Your AI Agent, With Peace of Mind"
+  url:
+    value: "https://www.ironclaw.com/"
+    date: 2026-03-20
+microsoft2021tools:
+  type: article
+  title: "Visual Studio Code: Use tools with agents"
+  author: Microsoft
+  date: 2021-11-03
+  url:
+    value: "https://code.visualstudio.com/docs/copilot/agents/agent-tools#_permission-levels"
+    date: 2026-03-20
+microsoft2021security:
+  type: article
+  title: "Visual Studio Code: Copilot Security"
+  author: Microsoft
+  date: 2021-11-03
+  url:
+    value: "https://code.visualstudio.com/docs/copilot/security#_terminal-sandboxing-experimental"
+    date: 2026-03-20
+wasmsecurity:
+  type: web
+  title: Security - WebAssembly
+  url:
+    value: "https://webassembly.org/docs/security/"
+    date: 2026-03-23
+clawhub:
+  type: web
+  title: ClawHub
+  url:
+    value: "https://clawhub.ai/"
+    date: 2026-04-03
+
+openclaw-skills-security-notes:
+  type: web
+  title: Skills - OpenClaw
+  url:
+    value: "https://docs.openclaw.ai/tools/skills#security-notes"
+    date: 2026-04-03
+claude-docs-mcp:
+  type: web
+  title: Connect Claude Code to tools via MCP - Claude Code Docs
+  url:
+    value: "https://code.claude.com/docs/en/mcp"
+    date: 2026-04-06
+li2025ace:
+  type: article
+  title: "ACE: A Security Architecture for LLM-Integrated App Systems"
+  author:
+    - "Li, Evan"
+    - "Mallick, Tushin"
+    - "Rose, Evan"
+    - "Robertson, William"
+    - "Oprea, Alina"
+    - "Nita-Rotaru, Cristina"
+  date: 2025-04-29
+  serial-number:
+    doi: 10.14722/ndss.2026.230352
+    arxiv: 2504.20984
+
+saber:
+  type: article
+  title: "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces"
+  author:
+    - "Hu, Qi"
+    - "Tang, Yifeng"
+    - "Wang, Qinghua"
+    - "Zhao, Lanyang"
+    - "Zhang, Pengji"
+    - "Qing, Yuhao"
+    - "Yao, Xin"
+    - "Huang, Dong"
+    - "Zhang, Lin"
+    - "Ji, Zhuoran"
+  date: 2026-05-31
+  serial-number:
+    arxiv: 2606.01317
+  url:
+    value: "https://arxiv.org/abs/2606.01317v2"
+    date: 2026-09-23
