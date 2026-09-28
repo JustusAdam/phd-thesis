@@ -10,8 +10,8 @@ programs. Whether a datum is private cannot always be determined by its content.
 PII (name, SSN, telephone number) can sometimes be identified via its unique
 structure. However, private data is a broader category, and data such as diary
 or email content, bank balances or contracted illnesses are often embedded in
-unstructured prose which also colocates data that may be sufficient to determine 
-the data subject. 
+unstructured prose which also colocates data that may be sufficient to determine
+the data subject.
 
 A reliable way to determine if data is private is by considering the data
 source, e.g. a bank statement, patient chart etc. This means however that in a
@@ -20,9 +20,9 @@ the data that was input to the operation is private *unless* its origins have
 been tracked through the program.
 
 A primary challenge in statically determining the origins of a datum in a program
-are pointers. Which value a given pointer may refer to, and therefore whether
+is pointers. Which value a given pointer may refer to, and therefore whether
 one of them could be sensitive or not, depends on all parts of the program that
-may modify pointer. This is called alias-analysis and unlike many other parts of
+may modify the pointer. This is called alias analysis and unlike many other parts of
 dataflow analysis it is a non-local analysis, meaning it cannot be performed
 for one function alone, but must take into account all of its callers. This
 leads to an explosion of the state space.
@@ -88,7 +88,7 @@ leads to an explosion of the state space.
   ]
 )
 
-The basic architecture or agentic loops is remarkably simple and, crucially, has
+The basic architecture of agentic loops is remarkably simple and, crucially, has
 deterministic programs on the critical path. Conceptually, agentic AI lets a
 language model "invoke tools", that is, programs. However, in reality, the AI
 itself has no means of directly running these programs. Its inputs and outputs
